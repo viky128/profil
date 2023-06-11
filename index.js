@@ -15,9 +15,9 @@ const music = new Audio();
 const songs = [
     {
         path: 'assets/1.mp3',
-        displayName: 'The Charmer\'s Call',
-        cover: 'assets/1.jpg',
-        artist: 'Hanu Dixit',
+        displayName: 'Kembali pulang',
+        cover: '1.png',
+        artist: 'Febby putri',
     },
     {
         path: 'assets/2.mp3',
