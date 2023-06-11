@@ -1,65 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>My Web Profile</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-    }
-
-    .profile-img {
-      display: block;
-      margin: 0 auto;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .profile-details {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    h1 {
-      margin-top: 0;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Day #18 - Budget App | AsmrProg</title>
 </head>
+
 <body>
-  <header>
-    <h1> xixixixixixix</h1>
-  </header>
 
-  <div class="container">
-    <img class="profile-img" src="https://c4.wallpaperflare.com/wallpaper/365/244/884/uchiha-itachi-naruto-shippuuden-anbu-silhouette-wallpaper-thumb.jpg" alt="Profile Picture">
-    <div class="profile-details">
-      <h1>Muhammad Vicky Abdul R.</h1>
-      <p>Web Design</p>
-      <p>Assalamualakum.</p>
-      <p>Email: mvickyabdul028@gmail.com.com</p>
-      <p>Phone: 0813-3445-5397</p>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <div class="total-amount-container">
+                    <h3>Budget</h3>
+                    <p class="hide error" id="budget-error">
+                        Value cannot be empty or negative
+                    </p>
+                    <input type="number" id="total-amount" placeholder="Enter Total Amount">
+                    <button class="submit" id="total-amount-button">
+                        Set Budget
+                    </button>
+                </div>
+
+                <div class="user-amount-container">
+                    <h3>Expenses</h3>
+                    <p class="hide error" id="product-title-error">
+                        Values cannot be empty
+                    </p>
+                    <input type="text" class="product-title" id="product-title" placeholder="Enter Title Of Product">
+                    <input type="number" id="user-amount" placeholder="Enter Cost Of Product">
+                    <button class="submit" id="check-amount">Check Amount</button>
+                </div>
+            </div>
+
+            <div class="output-container flex-space">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="amount">
+                        0
+                    </span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="expenditure-value">
+                        0
+                    </span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balance-amount">
+                        0
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="list">
+            <h3>Expenses List</h3>
+            <div class="list-container" id="list"></div>
+        </div>
+
     </div>
-  </div>
-</body>
-</html>
 
+
+    <script src="index.js"></script>
+</body>
+
+</html>
