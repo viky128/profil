@@ -21,16 +21,10 @@ const songs = [
     },
     {
         path: 'assets/2.mp3',
-        displayName: 'You Will Never See Me Coming',
-        cover: 'assets/2.jpg',
-        artist: 'NEFFEX',
+        displayName: 'Self Healing Playlist ',
+        cover: '2.jpg',
+        artist: 'TEMANKU',
     },
-    {
-        path: 'assets/3.mp3',
-        displayName: 'Intellect',
-        cover: 'assets/3.jpg',
-        artist: 'Yung Logos',
-    }
 ];
 
 let musicIndex = 0;
